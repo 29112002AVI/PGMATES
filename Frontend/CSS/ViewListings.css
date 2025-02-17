@@ -1,0 +1,41 @@
+
+#search-bar {
+    max-width: 500px;
+    margin: 20px;
+    margin-left:50px;
+    /* border: 1px solid black; */
+}
+
+.card-container{
+    position: relative; /* Ensures stacking order works */
+    z-index: 1;
+} 
+
+ .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    margin: 0px 20px;
+    gap: 20px; 
+  }
+  .card-text table {
+    width: 100%; /* Ensure table takes full width of the card */
+    border-collapse: collapse; /* Remove spacing between table cells */
+  }
+  
+  .card-text td {
+    padding: 5px 10px; /* Reduce padding inside table cells */
+    vertical-align: left;
+    text-align: left;
+    border-bottom: 1px solid rgb(145, 144, 144);
+  }
+  
+  .card-text td:first-child {
+    white-space: nowrap; /* Prevent icons from wrapping */
+    font-weight: bold;
+  }
+  
+  .card-text td strong {
+    font-weight: 600; /* Make labels bold */
+  }
+  
